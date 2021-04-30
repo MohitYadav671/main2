@@ -1,0 +1,187 @@
+body{
+    min-height: 100vh;
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    height: 1020px;
+    width: 480px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+header{
+    padding: 30px;
+    padding-top: 45px;
+    padding-bottom: 0px;
+}
+#balls{
+    position: relative;
+    margin-bottom: 0px;
+    margin-left: -20px;
+}
+.navbar{
+    background-color: #723be7;
+}
+.menu{
+    padding: 0.5em;
+    padding-top: 1em;
+    padding-right: 1em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 90px;
+    margin-top: -18px;
+    color: white;
+    background: linear-gradient(to right, #fa709a 0%, #fee140  130%);
+}
+#slideshow { 
+    margin-top: 10px;
+    margin-left: -14px;
+    margin-bottom: -10px;
+    position: relative;
+    width: 110%;
+    height: 240px;
+    padding: 0px;
+}  
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+main{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    min-height: 100px;
+    padding-top: 10px;
+    margin-bottom: -2px; 
+    background: linear-gradient(-45deg, #fa709a 0%, #fee140  100%);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.buttons{
+    display: flex;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.button{
+    flex: 1;
+    height: 110px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    font-family:sans-serif;
+    overflow: hidden;
+    color: rgb(20, 20, 19);
+}
+.button:hover{
+    animation: pop 0.3s linear 1;
+}
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+}  
+.main2back{
+    background: linear-gradient(-45deg, #fa709a 0%, #fee140  100%);
+    background-size: 400% 400%;
+    animation: gradient 2s ease infinite;
+    padding-top: 18px;
+    
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.main2{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    min-height: 100px;
+    padding-top: 10px;
+    background-color: #723be7; 
+}
+.events{
+    padding: 15px;
+    padding-top: 30px;
+}
+.loghead{
+    display: inline-flex;
+    padding-bottom: 20px;
+}
+#evnthead{
+    margin-top: -12px;
+    margin-left: -12px;
+}
+.events h2{
+    font-size: 1.3rem;
+    font-weight:500;
+    color:#e2e2e2;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    text-align: center;
+    margin-left: 20px;    
+}
+.event{
+    display: flex;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.event {
+    background-position: center;
+    transition: background 0.8s;
+}
+.event:hover {
+    background: #5cffbb radial-gradient(circle, transparent 1%, #f3bc89 1%) center/15000%;
+}
+.event:active {
+    background-size: 100%;
+    transition: background 0s;
+}
+.logo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-right: 15px;
+}
+.info{
+    flex: 1;
+}
+.title{
+    font-weight: bold;
+}
+.location{
+    color: #665E77;
+}
+.beds{
+    color: #f50e06;
+}
